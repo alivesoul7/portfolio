@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio</title>
+<link rel="stylesheet" href="style.css">
+  </head>
+  <script src="https://kit.fontawesome.com/feed0a0654.js" crossorigin="anonymous"></script>
+<body>
+  <div id="header">
+    <div class="containeer">
+      <nav>
+        <img src="logo4.png">
+      <ul id="sidemenu">
+        
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      
+      <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+      
+    
+    </nav>
+    </div>
+    <div class="header-text">
+      <p>UI/UX</p>
+      <h1>Hi,I'm <span>  Nabin</h1><h1></span>Oli From Nepal</h1></h1>
+    </div>
+  
+  <!------------about------------- -->
+    <div id="about">
+      <div class="containeer">
+        <div class="row">
+          <div class="about-col-1">
+           <br><br><br><br><br><br><br><br><br><img src="nbo.jpg">
+          
+          <div class="about-col-2"><br><br><br><br><br>
+            <h1 class="sub-title">About Me</h1>
+            <p>Its Me Nabin Oli . I am from Nepal.
+
+              I am a Web developer & Programmer.
+              Still reading<br>
+              I wanna be a Ethical hacker in future. Hacker<br>
+            I am "The own Kingdom of my own Kingdom".</p>
+          </div>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br>Web/App Interface</li>
+                <li><span>Web Development</span><br>Web Devloper</li>
+                <li><span>Coder</span><br>Programmer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----services---------------- -->
+    <div id="services">
+      <div class="containeer">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Hello I am a Websites Designer<br> if you want to make 
+              Websites you can contact me</p>
+              <a href="a">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-crop"></i>
+            <h2>UI/Ux</h2>
+            <p>Hello I am a Web developer Interface</p>
+              <a href="a">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Designer</h2>
+            <p>Hello I am a App Designer</p>
+              <a href="a">Learn more</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <!--------portfolio---------- -->
+  <div id="portfolio">
+    <div class="containeer">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="work1.jpg">
+        <div class="layer">
+          <h3>Web Development</h3><br>
+          <p>The Website connect you to the talented 
+            people<br> around the Nepal.Download it from play store.
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        </div>
+      </div>
+    
+    </div>
+    </div>
+  </div>
+
+          
+<script>
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+      for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+     }
+     for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-link");
+     }
+     event.currentTarget.classlist.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+
+</script>
+</body>
+</html>
